@@ -112,9 +112,10 @@ const page = () => {
     { label: "CSIT", value: "csit" },
     { label: "CSAI", value: "csai" },
     { label: "CSE (AI/ML)", value: "cseaiml" },
-    { label: "ECE", value: "ece" },
+    { label: "CSE(CS)", value: "csecs" },
     { label: "ME", value: "me" },
     { label: "EEE", value: "eee" },
+    {label: 'Other', value: 'other'}
   ];
 
   const domainOptions = [

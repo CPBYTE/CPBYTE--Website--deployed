@@ -306,8 +306,9 @@ const RegisterPage = () => {
     { label: 'ECE', value: 'ece' },
     { label: 'ME', value: 'me' },
     { label: 'EEE', value: 'eee' },
-    { label: 'MCA', value: 'mca' },
-    { label: 'ELCE', value: 'elce' }, // new branch
+    { label: 'CSE(CS)', value: 'csecs' },
+    { label: 'ELCE', value: 'elce' },
+    {label: 'Other', value: 'other'}
   ];
   const domainOptions = [
     { label: 'AI / ML', value: 'aiml' },
