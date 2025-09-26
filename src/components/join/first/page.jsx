@@ -247,7 +247,7 @@ const RegisterPage = () => {
     initialValues: {
       name: '',
       whatsappNumber: '',
-      id: '',
+      id: 'NAN',
       email: '',
       gender: '',
       branch: '',
@@ -308,7 +308,8 @@ const RegisterPage = () => {
     { label: 'EEE', value: 'eee' },
     { label: 'CSE(CS)', value: 'csecs' },
     { label: 'ELCE', value: 'elce' },
-    {label: 'CSE(DS)', value: 'cseds'}
+    {label: 'CSE(DS)', value: 'cseds'},
+    {label: 'VLSI', value: 'vlsi'}
   ];
   const domainOptions = [
     { label: 'AI / ML', value: 'aiml' },
@@ -377,7 +378,7 @@ const RegisterPage = () => {
                 />
                 <Input
                   value="id"
-                  label="Library ID (optional)"
+                  label="Library ID (write NAN if doesnt have libID)"
                   placeHolder="2125cs1001"
                   formikTouched={formik.touched.id}
                   formikError={formik.errors.id}

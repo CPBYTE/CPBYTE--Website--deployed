@@ -287,6 +287,8 @@ const departmentOptions = [
   { value: "ece", label: "ECE" },
   { value: "me", label: "ME" },
   { value: "eee", label: "EEE" },
+  { value: "csecs", label: "CSE(CS)"},
+  {value: "cseds", label: 'CSE(DS)'}
 ];
 
 const yearOptions = [
