@@ -308,7 +308,7 @@ const RegisterPage = () => {
     { label: 'EEE', value: 'eee' },
     { label: 'CSE(CS)', value: 'csecs' },
     { label: 'ELCE', value: 'elce' },
-    {label: 'Other', value: 'other'}
+    {label: 'CSE(DS)', value: 'cseds'}
   ];
   const domainOptions = [
     { label: 'AI / ML', value: 'aiml' },

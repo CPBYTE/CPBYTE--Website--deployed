@@ -115,7 +115,7 @@ const page = () => {
     { label: "CSE(CS)", value: "csecs" },
     { label: "ME", value: "me" },
     { label: "EEE", value: "eee" },
-    {label: 'Other', value: 'other'}
+    {label: 'CSE(DS)', value: 'cseds'}
   ];
 
   const domainOptions = [
