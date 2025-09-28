@@ -453,8 +453,8 @@ const AR_VR = [
         id: 1,
         name: 'Raj',
         image: '/new_2ndyear/Raj.jpg',
-        linkedin: 'https://www.linkedin.com/in/raj-singh-5222a5295',
-        github: 'https://github.com/rajsingh19',
+            linkedin: 'https://www.linkedin.com/in/raj-singh-5222a5295',
+            github: 'https://github.com/rajsingh19',
     }
 ]
 
