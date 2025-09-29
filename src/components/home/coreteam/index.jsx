@@ -73,8 +73,8 @@ const CoreTeam = () => {
             position: 'Gen AI Lead',
             image: '/2025/3rd-year/manmath.jpg',
             link: '',
-            linkedin: 'https://www.linkedin.com/in/mayursrivastav/',
-            github: 'https://github.com/Sri-Mayur',
+            linkedin: 'https://www.linkedin.com/in/manmath-tiwari-10baba327/',
+            github: 'https://github.com/Manmath0108',
         },
 
         {
@@ -146,8 +146,8 @@ const CoreTeam = () => {
             position: 'Creative Content Lead',
             image: '/2025/3rd-year/priyanshu.jpg',
             link: '',
-            linkedin: 'https://www.linkedin.com/in/aditya-mohan-gupta-a116b6256/',
-            github: 'https://github.com/Adityacheeze',
+            linkedin: 'https://www.linkedin.com/in/priyanshu-singh-71b574287/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            github: 'https://github.com/Priyanshu-ps14',
         },
         {
             id: 17,
