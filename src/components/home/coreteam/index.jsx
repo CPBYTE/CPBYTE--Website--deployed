@@ -35,7 +35,7 @@ const CoreTeam = () => {
             id: 4,
             name: 'Akshat Shukla',
             position: 'Administrator',
-            image: '/2025/3rd-year/akshat.png',
+            image: '/2025/3rd-year/akshat.jpg',
             link: '',
             linkedin: 'https://linkedin.com/in/as-akshat-shukla',
             github: 'https://github.com/Nemesis-AS',
