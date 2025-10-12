@@ -542,3 +542,281 @@ export const DSA = [
     { category: 'JAVA', members: JAVA },
     { category: 'C++', members: Cpp },
 ]
+
+
+export const coordinators = [
+    {
+        "id": 1,
+        "name": "Vaibhav Gupta",
+        "image": "/2025/2nd-year/vaibhav.jpg",
+        "linkedin": "https://www.linkedin.com/in/vaibhav9705/",
+        "github": "https://github.com/vaibhavgupta5"
+    },
+    {
+        "id": 2,
+        "name": "Ashish Sharma",
+        "image": "/2025/2nd-year/ashish.jpg",
+        "linkedin": "https://www.linkedin.com/in/ashishsharmasdgh/",
+        "github": "https://github.com/ashishgit4"
+    },
+    {
+        "id": 3,
+        "name": "Suryansh Gupta",
+        "image": "/2025/2nd-year/suryansh.jpg",
+        "linkedin": "https://www.linkedin.com/in/suryansh-gupta-90027725b/",
+        "github": "https://github.com/Suryansh160"
+    },
+    {
+        "id": 4,
+        "name": "Jatin Agarwal",
+        "image": "/2025/2nd-year/jatin.jpg",
+        "linkedin": "https://www.linkedin.com/in/jatinagarwal001/",
+        "github": "https://github.com/jatin-agarwal-01"
+    },
+    {
+        "id": 6,
+        "name": "Ankit Kumar",
+        "image": "/2025/2nd-year/ankit.jpg",
+        "linkedin": "https://www.linkedin.com/in/ankit-kumar84/",
+        "github": "https://github.com/Ankit-kumar28"
+    },
+    {
+        "id": 7,
+        "name": "Payal Goswami",
+        "image": "/2025/2nd-year/payal.jpg",
+        "linkedin": "https://www.linkedin.com/in/payal-goswami97/",
+        "github": "https://github.com/Payal-Goswami"
+    },
+    {
+        "id": 8,
+        "name": "Rishika Nigam",
+        "image": "/2025/2nd-year/rishika.jpg",
+        "linkedin": "https://www.linkedin.com/in/rishika-nigam-77b930328",
+        "github": "https://github.com/rishikanigam2006315"
+    },
+    {
+        "id": 10,
+        "name": "Prachi Sharma",
+        "image": "/2025/2nd-year/prachi.jpg",
+        "linkedin": "https://www.linkedin.com/in/prachisharma95",
+        "github": "https://github.com/Prachi9506"
+    },
+    {
+        "id": 10,
+        "name": "Khushi Tomar",
+        "image": "/2025/2nd-year/khushi.jpg",
+        "linkedin": "https://www.linkedin.com/in/khushi-tomar-251478329/",
+        "github": "https://github.com/Khushi717"
+    },
+    {
+        "id": 11,
+        "name": "Ishika Garg",
+        "image": "/2025/2nd-year/ishika.jpg",
+        "linkedin": "https://www.linkedin.com/in/ishika-garg2507/",
+        "github": "https://github.com/ishika2501-05"
+    },
+    {
+        "id": 12,
+        "name": "Ojasv Singh",
+        "image": "/2025/2nd-year/ojasv.jpg",
+        "linkedin": "https://www.linkedin.com/in/ojasv-singh-b80b52326/",
+        "github": "https://github.com/ojasvsingh71"
+    },
+    {
+        "id": 14,
+        "name": "Harsh Gupta",
+        "image": "/2025/2nd-year/harsh.jpg",
+        "linkedin": "https://www.linkedin.com/in/harshachieve100",
+        "github": "https://github.com/harshgupta751"
+    },
+    {
+        "id": 15,
+        "name": "Aditi Singh",
+        "image": "/2025/2nd-year/aditi.jpg",
+        "linkedin": "https://www.linkedin.com/in/aditi-singh-3b18a3329",
+        "github": "https://github.com/AditiSingh-05"
+    },
+    {
+        "id": 16,
+        "name": "Aditya Kumar",
+        "image": "/2025/2nd-year/aditya-kumar.jpg",
+        "linkedin": "https://www.linkedin.com/in/aditya-kumar-47088421b/",
+        "github": "https://github.com/AshuAditya1"
+    },
+    {
+        "id": 17,
+        "name": "Shivank Tyagi",
+       "image": "/2025/2nd-year/shivank.jpg",
+        "linkedin": "https://www.linkedin.com/in/shivank-tyagi-059220337",
+        "github": "https://github.com/shivanktyagi001"
+    },
+    {
+        "id": 19,
+        "name": "Prathmesh Singh",
+        "image": "/2025/2nd-year/prathmesh.jpg",
+        "linkedin": "https://www.linkedin.com/in/prathmesh-singh-909a36328/",
+        "github": "https://github.com/Prathmesh-04"
+    },
+    {
+        "id": 20,
+        "name": "Shivanshu Shukla",
+       "image": "/2025/2nd-year/shivanshu.jpg",
+        "linkedin": "https://www.linkedin.com/in/shivanshu-shukla-7aa482327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "github": "https://github.com/shivanshu1512"
+    },
+    {
+        "id": 21,
+        "name": "Sanskar sinha",
+        "image": "/2025/2nd-year/sanskar.jpg",
+        "linkedin": "https://www.linkedin.com/in/sanskar-sinha-185a36326",
+        "github": "https://github.com/Sanskar225"
+    },
+    {
+        "id": 22,
+        "name": "Shashwat Srivastava",
+        "image": "/2025/2nd-year/shashwat.jpg",
+        "linkedin": "https://www.linkedin.com/in/shashwat0srivastava/",
+        "github": "https://github.com/Shashwatyarr"
+    },
+    {
+        "id": 23,
+        "name": "Divya kumari",
+        "image": "/2025/2nd-year/divya.jpg",
+        "linkedin": "https://www.linkedin.com/in/divya-kumari-512891321/",
+        "github": "https://github.com/divyakumari7"
+    },
+    {
+        "id": 24,
+        "name": "Piyush Goel",
+        "image": "/2025/2nd-year/piyush.jpg",
+        "linkedin": "https://github.com/the-piyushgoel",
+        "github": "https://www.linkedin.com/in/the-piyushgoel/"
+    },
+    {
+        "id": 25,
+        "name": "Pratyush Mehra",
+       "image": "/2025/2nd-year/pratyush.jpg",
+        "linkedin": "https://www.linkedin.com/in/pratyushmehra22/",
+        "github": "https://github.com/pratyush-who"
+    },
+    {
+        "id": 26,
+        "name": "Manish Sharma",
+        "image": "/2025/2nd-year/manish.jpg",
+        "linkedin": "https://www.linkedin.com/in/manish-sharma-1b849b328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "github": "https://github.com/manish43221"
+    },
+    {
+        "id": 27,
+        "name": "Sanchit Gupta",
+        "image": "/2025/2nd-year/sanchit.jpg",
+        "linkedin": "https://www.linkedin.com/in/sanchit-gupta-4819a9284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "github": "https://github.com/Sanchit1802"
+    },
+    {
+        "id": 28,
+        "name": "Siya Kapoor",
+        "image": "/2025/2nd-year/siya.jpg",
+        "linkedin": "https://www.linkedin.com/in/siya-kapoor-/",
+        "github": "https://github.com/sikapworks"
+    },
+    {
+        "id": 29,
+        "name": "Aditya Singh",
+        "image": "/2025/2nd-year/aditya-singh.jpeg",
+        "linkedin": "https://www.linkedin.com/in/aditya-singh-8b8045345/",
+        "github": "https://github.com/aditya3012singh/"
+    },
+    {
+        "id": 30,
+        "name": "Priyanshu raj",
+        "image": "/2025/2nd-year/priyanshu.jpg",
+        "linkedin": "Na",
+        "github": "Na"
+    },
+    {
+        "id": 31,
+        "name": "Priyanshi Vishwakarma",
+        "image": "/2025/2nd-year/priyanshi.jpg",
+        "linkedin": "https://www.linkedin.com/in/priyanshi-vishwakarma-b4ba1a328/",
+        "github": "https://github.com/PriyanshiVishwakarma09"
+    },
+    {
+        "id": 32,
+        "name": "Shriya Gupta",
+        "image": "/2025/2nd-year/shriya.jpg",
+        "linkedin": "https://www.linkedin.com/in/shriya-gupta-594350327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "github": "https://github.com/shriya22654"
+    },
+    {
+        "id": 33,
+        "name": "Shanya Rathor",
+        "image": "/2025/2nd-year/shanya.jpg",
+        "linkedin": "https://www.linkedin.com/in/shanya-rathor-523557328/",
+        "github": "https://github.com/Shanya-git"
+    },
+    {
+        "id": 34,
+        "name": "Nikun Chauhan",
+        "image": "/2025/2nd-year/Nikun.jpg",
+        "linkedin": "https://leetcode.com/u/nikun_chauhan/",
+        "github": "https://github.com/nikunchauhan"
+    },
+    {
+        "id": 35,
+        "name": "Sakshi Singh",
+        "image": "/2025/2nd-year/sakshi.jpg",
+        "linkedin": "https://www.linkedin.com/in/sakshi-singh-b5b89b31a",
+        "github": "https://github.com/Sakshi2905-creator"
+    },
+    {
+        "id": 36,
+        "name": "Mohd Yavar",
+        "image": "/2025/2nd-year/yavar.jpg",
+        "linkedin": "https://www.linkedin.com/in/mohdyavar",
+        "github": "https://github.com/yavar10"
+    },
+    {
+        "id": 37,
+        "name": "Mradul Gupta",
+        "image": "/2025/2nd-year/mradul.jpg",
+        "linkedin": "https://www.linkedin.com/in/mkj77",
+        "github": "https://github.com/MKJ-77"
+    },
+    {
+        "id": 38,
+        "name": "Shagun Gangwar",
+        "image": "/2025/2nd-year/shagun.jpg",
+        "linkedin": "https://www.linkedin.com/in/shagun-gangwar-4849b8323",
+        "github": "https://github.com/ShagunGangwar21"
+    },
+    {
+        "id": 39,
+        "name": "Pranav Dhar Dwivedi",
+        "image": "/2025/2nd-year/pranav.jpg",
+        "linkedin": "https://www.linkedin.com/in/pranav-dhar-dwivedi-047548328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "github": "https://github.com/pranavdhardwivedi2006"
+    },
+    {
+        "id": 40,
+        "name": "Vanshika Agarwal",
+        "image": "/2025/2nd-year/vanshika.jpg",
+        "linkedin": "https://www.linkedin.com/in/ag006vanshika",
+        "github": "https://github.com/ag006vanshika"
+    },
+    {
+        "id": 41,
+        "name": "Kartik",
+        "image": "/2025/2nd-year/kartik.jpg",
+        "linkedin": "https://www.linkedin.com/in/kartik-5923a230b/",
+        "github": "https://github.com/K2976"
+    },
+    {
+        "id": 42,
+        "name": "Sanya Rai ",
+        "image": "/2025/2nd-year/sanya.jpg",
+        "linkedin": "https://www.linkedin.com/in/sanya-rai-a44a35328",
+        "github": "https://github.com/Sanyaa04"
+    },
+
+]
