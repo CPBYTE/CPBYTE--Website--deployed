@@ -73,7 +73,7 @@ export default function App() {
           ))}
         </NavbarContent>
 
-        <NavbarContent className="mt-3 mb-2" justify="end">
+        {/* <NavbarContent className="mt-3 mb-2" justify="end">
           <NavbarItem>
             <Button
               as={Link}
@@ -93,7 +93,7 @@ export default function App() {
               }`}></span>
             </Button>
           </NavbarItem>
-        </NavbarContent>
+        </NavbarContent> */}
 
         <NavbarMenu>
           {menuItems.map((item) => (
