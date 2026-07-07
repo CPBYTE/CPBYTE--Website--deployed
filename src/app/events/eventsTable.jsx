@@ -87,13 +87,13 @@ const EventsTable = ({ events = [
   const getStatusStyle = (status) => {
     switch (status) {
       case "Active":
-        return "text-green-500 bg-green-100/60 dark:bg-gray-800";
+        return "text-green-400 bg-green-500/10 border border-green-500/20";
       case "Completed":
-        return "text-purple-500 bg-purple-100/60 dark:bg-gray-800";
+        return "text-purple-400 bg-purple-500/10 border border-purple-500/20";
       case "Upcoming":
-        return "text-blue-500 bg-blue-100/60 dark:bg-gray-800";
+        return "text-blue-400 bg-blue-500/10 border border-blue-500/20";
       default:
-        return "text-gray-500 bg-gray-100 dark:text-gray-400 dark:bg-gray-800";
+        return "text-gray-400 bg-white/5 border border-white/10";
     }
   };
 
@@ -107,71 +107,66 @@ const EventsTable = ({ events = [
   // Table component for reusability
   const EventTable = ({ events, title }) => (
     <div className="mb-12">
-      <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">{title}</h2>
+      <h2 className="text-2xl font-bold text-white mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{title}</h2>
       <div className="relative">
-        <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 dark:scrollbar-thumb-gray-700 dark:scrollbar-track-gray-800">
+        <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-800 scrollbar-track-transparent">
           <div className="inline-block min-w-full align-middle">
-            <div className="overflow-hidden border border-gray-200 dark:border-gray-700 rounded-lg">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                <thead className="bg-gray-50 dark:bg-gray-800">
+            <div className="overflow-hidden border border-white/10 glass-card rounded-2xl">
+              <table className="min-w-full divide-y divide-white/10">
+                <thead className="bg-white/5">
                   <tr>
-                    <th scope="col" className="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <th scope="col" className="py-4 px-6 text-sm font-semibold text-left text-gray-200">
                       <span>Event Name</span>
                     </th>
-                    <th scope="col" className="px-6 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <th scope="col" className="px-6 py-4 text-sm font-semibold text-left text-gray-200">
                       Status
                     </th>
-                    <th scope="col" className="px-6 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <th scope="col" className="px-6 py-4 text-sm font-semibold text-left text-gray-200">
                       Start Date
                     </th>
-                    <th scope="col" className="px-6 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <th scope="col" className="px-6 py-4 text-sm font-semibold text-left text-gray-200">
                       End Date
                     </th>
-                    <th scope="col" className="px-6 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <th scope="col" className="px-6 py-4 text-sm font-semibold text-left text-gray-200">
                       About
                     </th>
-                    <th scope="col" className="px-6 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <th scope="col" className="px-6 py-4 text-sm font-semibold text-left text-gray-200">
                       Participants
                     </th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+                <tbody className="divide-y divide-white/10 bg-transparent">
                   {events.map((event) => (
                     <tr
                       key={event.id}
-                      className="cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800"
+                      className="cursor-pointer hover:bg-white/5 transition-colors duration-200"
                       onClick={() => router.push(`/events`)}
                     >
-                      <td className="px-4 py-4 text-sm font-medium whitespace-nowrap">
-                        <div>
-                          <h2 className="font-medium text-gray-800 dark:text-white">{event.name}</h2>
-                        </div>
+                      <td className="px-6 py-4 text-sm font-medium whitespace-nowrap">
+                        <h2 className="font-semibold text-white">{event.name}</h2>
                       </td>
                       <td className="px-6 py-4 text-sm font-medium whitespace-nowrap">
-                        <div className={`inline px-3 py-1 text-sm font-normal rounded-full gap-x-2 ${getStatusStyle(event.status)}`}>
+                        <div className={`inline-flex px-3 py-1 text-xs font-medium rounded-full gap-x-2 ${getStatusStyle(event.status)}`}>
                           {event.status}
                         </div>
                       </td>
-                      <td className="px-6 py-4 text-sm font-medium whitespace-nowrap">
-                        <div>{event.startDate}</div>
+                      <td className="px-6 py-4 text-sm text-gray-300 whitespace-nowrap">
+                        {event.startDate}
                       </td>
-                      <td className="px-6 py-4 text-sm font-medium whitespace-nowrap">
-                        <div>{event.endDate}</div>
+                      <td className="px-6 py-4 text-sm text-gray-300 whitespace-nowrap">
+                        {event.endDate}
                       </td>
                       <td className="px-6 py-4 text-sm">
                         <div>
-                          <h4 className="text-gray-700 dark:text-gray-200">{event.about.title}</h4>
-                          <p className="text-gray-500 dark:text-gray-400 line-clamp-2">{event.about.description}</p>
+                          <h4 className="font-semibold text-gray-200">{event.about.title}</h4>
+                          <p className="text-gray-400 mt-1 line-clamp-2">{event.about.description}</p>
                         </div>
                       </td>
                       <td className="px-6 py-4 text-sm whitespace-nowrap">
                         <div className="flex items-center space-x-2">
-                          <span className="text-blue-500 font-semibold bg-blue-100 px-3 py-1 rounded-full">
+                          <span className="bg-blue-500/10 border border-blue-500/20 text-blue-400 font-semibold px-3 py-1 rounded-full text-xs">
                             {event.participants}
                           </span>
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-4 h-4 text-gray-500">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-                          </svg>
                         </div>
                       </td>
                     </tr>
@@ -186,8 +181,8 @@ const EventsTable = ({ events = [
   );
 
   return (
-    <section className="container px-4 mx-auto">
-      <div className="flex flex-col mt-6">
+    <section className="container px-4 mx-auto mt-12">
+      <div className="flex flex-col">
         {ongoingEvents.length > 0 && <EventTable events={ongoingEvents} title="Ongoing Events" />}
         {upcomingEvents.length > 0 && <EventTable events={upcomingEvents} title="Upcoming Events" />}
         {completedEvents.length > 0 && <EventTable events={completedEvents} title="Completed Events" />}

@@ -27,12 +27,12 @@ const Counter = ({ targetCount, isVisible }) => {
 
   return (
     <div className="counter">
-        <h5 className="text-5xl font-bold text-white">
+        <h5 className="text-5xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 <span className="inline text-white">
                     <span className="inline text-white">
                         {count}
                     </span>
-                    <span className="text-indigo-200">
+                    <span className="gradient-text">
                         +
                     </span>
                 </span>
@@ -63,13 +63,14 @@ const CTA = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-indigo-800 mx-auto max-w-screen-xl my-8 md:my-20">
-        <div className="container grid grid-cols-2 gap-8 py-8 mx-auto text-center md:grid-cols-4">
+    <section ref={sectionRef} className="mx-auto max-w-screen-xl my-8 md:my-20 px-4">
+      <div className="glass-card glow-blue p-8 md:p-12">
+        <div className="container grid grid-cols-2 gap-8 py-4 mx-auto text-center md:grid-cols-4">
             <div>
                 <Counter 
                 targetCount={100} 
                 isVisible={isVisible} />
-                <p className="text-xs font-medium tracking-wide text-indigo-100 uppercase">
+                <p className="text-xs font-medium tracking-wider text-gray-400 uppercase mt-2">
                   Members
                 </p>
             </div>
@@ -77,7 +78,7 @@ const CTA = () => {
                 <Counter 
                 targetCount={15} 
                 isVisible={isVisible} />
-                <p className="text-xs font-medium tracking-wide text-indigo-100 uppercase">
+                <p className="text-xs font-medium tracking-wider text-gray-400 uppercase mt-2">
                   Ongoing Projects
                 </p>
             </div>
@@ -85,7 +86,7 @@ const CTA = () => {
                 <Counter 
                 targetCount={30} 
                 isVisible={isVisible} />
-                <p className="text-xs font-medium tracking-wide text-indigo-100 uppercase">
+                <p className="text-xs font-medium tracking-wider text-gray-400 uppercase mt-2">
                   Finished Projects
                 </p>
             </div>
@@ -93,18 +94,19 @@ const CTA = () => {
                 <Counter 
                 targetCount={8} 
                 isVisible={isVisible} />
-                <p className="text-xs font-medium tracking-wide text-indigo-100 uppercase">
+                <p className="text-xs font-medium tracking-wider text-gray-400 uppercase mt-2">
                   Collaborators
                 </p>
             </div>
         </div>
-        <div className="flex p-4 mx-auto mt-4 w-52">
+        <div className="flex p-4 mx-auto mt-6 w-52">
             <Link
             href="/register"
-            className="py-2 px-4 bg-white hover:bg-gray-100 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-indigo-500 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+            className="py-3 px-6 bg-blue-600 hover:bg-blue-500 text-white w-full transition-all duration-300 text-center text-sm font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 rounded-lg tracking-wide">
                 Register Now
             </Link>
         </div>
+      </div>
     </section>
   );
 };

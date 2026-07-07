@@ -3,7 +3,7 @@ import React from 'react'
 const ComingSoon = () => {
   return (
    
-      <section x-data="{ isOpen: false }" className="w-full my-10 bg-white">
+      <section x-data="{ isOpen: false }" className="w-full my-10 bg-transparent text-white">
     <div className="container relative flex flex-col  px-6 py-8 mx-auto">
         
         <section className="flex items-center flex-1">
@@ -20,7 +20,7 @@ const ComingSoon = () => {
 
                 
 
-                <p className="mt-8 text-center text-gray-700  text-md md:text-xl">We are working to live this page as soon as possible :)</p>
+                <p className="mt-8 text-center text-gray-300  text-md md:text-xl">We are working to live this page as soon as possible :)</p>
             </div>
         </section>
 

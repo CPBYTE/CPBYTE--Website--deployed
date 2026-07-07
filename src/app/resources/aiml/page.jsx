@@ -14,15 +14,14 @@ const Page = () => {
   return (
     <>
       <title>AI/ML Resources CPBYTE | Technical Club Of KIET</title>
-      <section className="bg-white dark:bg-gray-900 mx-auto max-w-screen-xl">
+      <section className="bg-transparent text-white mx-auto max-w-screen-xl min-h-screen py-10">
         <div className="container px-6 py-10 mx-auto">
-          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-            {" "}
+          <h1 className="text-2xl font-bold text-center text-white capitalize lg:text-4xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
             AI/ML RESOURCES
             <div className="flex justify-center mx-auto mt-6">
-              <span className="inline-block w-56 h-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-8 h-1 mx-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-4 h-1 bg-blue-500 rounded-full"></span>
+              <span className="inline-block w-44 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></span>
+              <span className="inline-block w-6 h-1 mx-1 bg-blue-500 rounded-full"></span>
+              <span className="inline-block w-2 h-1 bg-blue-400 rounded-full"></span>
             </div>
           </h1>
 

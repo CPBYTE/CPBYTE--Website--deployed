@@ -12,62 +12,61 @@ const domains = [
     id: 0,
     name: "DSA & CP",
     animationLink:
-      "https://lottie.host/1164016c-616d-4d8b-b9f1-a5bed1e4beeb/FkicVGCA7e.json",
+      "https://assets10.lottiefiles.com/packages/lf20_ovwsvehd.json",
     link: "/resources/dsa",
   },
   {
     id: 1,
     name: "UI/UX",
     animationLink:
-      "https://lottie.host/5f5fe598-7fa7-4151-b2ec-40764bc1b3cc/ruoJAeHvFE.json",
+      "https://lottie.host/f8bd7394-db05-43d1-813a-98c76d88101b/QuIC27CPb9.json",
     link: "/resources/uiux",
   },
   {
     id: 2,
     name: "Web Development",
     animationLink:
-      "https://lottie.host/a6064f6e-e8e0-4ffc-8cef-b6ee9b910368/NeJCxISROu.json",
+      "/lottie_animations/React.json",
     link: "/resources/webdev",
   },
   {
     id: 3,
     name: "Android Development",
     animationLink:
-      "https://lottie.host/f32acb1a-3639-4d55-a49b-2f9b1baf3638/gdOqpmTAi4.json",
+      "https://lottie.host/83c1c54a-46b8-4af3-8bec-453e26c72559/pb8JClVcPF.json",
     link: "/resources/android",
   },
   {
     id: 4,
     name: "AR / VR",
     animationLink:
-      "https://lottie.host/80024351-caca-4118-b3fc-6ce6e7731808/1xfloRrxVU.json",
+      "https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json",
     link: "/resources/arvr",
   },
   {
     id: 5,
     name: "AI/ML",
     animationLink:
-      "https://lottie.host/fbe7cb74-800b-4b82-84fa-e5c600f30da3/jnKlg0DBqa.json",
+      "https://lottie.host/8e6ae271-b109-483c-863f-db44f123ae2c/SkW2h9f8ob.json",
     link: "/resources/aiml",
   },
 ];
 
 const page = () => {
   return (
-    <section className="bg-white ">
-      <title>Resources provided by CPBYTE | Technical Club Of KIET</title>
+    <section className="bg-transparent text-white min-h-screen py-10">
       <div className="container px-6 py-10 mx-auto">
         <Heading1 title="Resources" />
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
           {domains.map((domain) => {
             return (
               <Link href={domain.link} key={domain.id}>
-                <div className="flex flex-col items-center p-4 border sm:p-6 rounded-xl ">
+                <div className="glass-card flex flex-col items-center p-6 border border-white/10 rounded-2xl hover:border-blue-500/30 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
                   <div className="object-cover w-full rounded-md aspect-square">
                     <PlayerAnimation link={domain.animationLink} />
                   </div>
 
-                  <h1 className="text-2xl font-semibold text-blue-700 capitalize ">
+                  <h1 className="text-2xl font-bold text-white capitalize mt-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                     {domain.name}
                   </h1>
                 </div>

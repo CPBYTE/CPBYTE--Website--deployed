@@ -3,6 +3,10 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/home/footer";
 import Favicon from "/public/favicon.ico";
+import dynamic from "next/dynamic";
+
+const VantaBackground = dynamic(() => import("@/components/VantaBackground"), { ssr: false });
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,10 +18,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="dark bg-gray-950">
+      <body className={`${inter.className} min-h-screen bg-transparent text-white relative antialiased`}>
+        <VantaBackground />
         <Header />
-        {children}
+        <div className="relative z-10">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

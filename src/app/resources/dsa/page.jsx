@@ -75,7 +75,7 @@ const Page = () => {
     <>
       <title>DSA Resources CPBYTE | Technical Club Of KIET</title>
 
-      <section className="bg-white dark:bg-gray-900 mx-auto max-w-screen-xl">
+      <section className="bg-transparent text-white mx-auto max-w-screen-xl min-h-screen py-10">
         <div className="container px-6 mx-auto">
           <Heading1 title="DSA Resources" />
 

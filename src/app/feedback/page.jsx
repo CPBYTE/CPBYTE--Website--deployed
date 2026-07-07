@@ -83,13 +83,13 @@ const page = () => {
         Of KIET
       </title>
 
-      <div className="max-w-screen-sm mx-auto my-5">
-        <h2 className="max-w-lg  mx-3 mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
+      <div className="max-w-screen-sm mx-auto my-10 px-4 text-white">
+        <h2 className="max-w-lg mx-3 mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl">
           <span className="relative inline-block">
             <span className="relative">
-              Feedback<span className="text-blue-700"> Form</span>{" "}
+              Feedback <span className="gradient-text">Form</span>
             </span>
-          </span>{" "}
+          </span>
         </h2>
         <form onSubmit={formik.handleSubmit} className="mx-2">
           <Input

@@ -22,15 +22,14 @@ const Page = () => {
   return (
     <>
       <title>Join CPBYTE | Technical Club Of KIET</title>
-      <section className="bg-white dark:bg-gray-900 mx-auto max-w-screen-xl">
+      <section className="bg-transparent text-white mx-auto max-w-screen-xl min-h-screen py-10">
         <div className="container px-6 py-10 mx-auto">
-          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-            {" "}
-            Join CPBYTE
+          <h1 className="text-2xl font-bold text-center text-white capitalize lg:text-4xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+            Join <span className="gradient-text">CPBYTE</span>
             <div className="flex justify-center mx-auto mt-6">
-              <span className="inline-block w-52 h-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-8 h-1 mx-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-3 h-1 bg-blue-500 rounded-full"></span>
+              <span className="inline-block w-44 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></span>
+              <span className="inline-block w-6 h-1 mx-1 bg-blue-500 rounded-full"></span>
+              <span className="inline-block w-2 h-1 bg-blue-400 rounded-full"></span>
             </div>
           </h1>
 
@@ -43,9 +42,9 @@ const Page = () => {
                   className="flex flex-col items-center justify-center"
                 >
                   <CardBox link={year.playerLink} />
-                  <h1 className="text-xl mt-1 font-semibold text-center text-blue-800 capitalize dark:text-white">
+                  <h1 className="text-xl mt-4 font-semibold text-center text-white capitalize">
                     Click Here <br />
-                    {`(${year.text})`}
+                    <span className="text-blue-400">{`(${year.text})`}</span>
                   </h1>
                 </Link>
               );

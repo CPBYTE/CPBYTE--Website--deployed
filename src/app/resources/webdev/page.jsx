@@ -12,7 +12,7 @@ const Resources = [
   {
     id: 2,
     playerLink:
-      "https://lottie.host/ffc39d2e-2503-44df-853f-3a0582513533/LzpWxYlXT0.json",
+      "https://lottie.host/f8bd7394-db05-43d1-813a-98c76d88101b/QuIC27CPb9.json",
     link: "webdev/css",
   },
   {
@@ -24,7 +24,7 @@ const Resources = [
   {
     id: 4,
     playerLink:
-      "https://lottie.host/7d3f84bc-2623-42a6-ab5f-ba96b0c0300c/qk0UYGOD4i.json",
+      "/lottie_animations/React.json",
     link: "webdev/react",
   },
 ];
@@ -33,7 +33,7 @@ const Page = () => {
   return (
     <>
       <title>Web Development Resources CPBYTE | Technical Club Of KIET</title>
-      <section className="bg-white dark:bg-gray-900 mx-auto max-w-screen-xl">
+      <section className="bg-transparent text-white mx-auto max-w-screen-xl min-h-screen py-10">
         <div className="container px-6 mx-auto">
           <Heading1 title="Web Resources" />
 

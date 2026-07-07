@@ -18,9 +18,6 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  // ✅ Dark mode only on /recruitment
-  const darkModeTrigger = pathname === "/recruitment" || pathname === "/submitted" ? false : true;
-
   const menuItems = [
     { id: 1, link: "/", name: "Home" },
     { id: 2, link: "/about", name: "About" },
@@ -32,20 +29,17 @@ export default function App() {
   ];
 
   return (
-    <div className={`relative ${!darkModeTrigger ? "bg-black/90 text-white" : ""}`}>
-      {/* Dark overlay if false */}
- 
-
+    <div className="relative bg-transparent">
       <Navbar
         maxWidth="xl"
         onMenuOpenChange={setIsMenuOpen}
         isMenuOpen={isMenuOpen}
-        className={`shadow-md pb-1.5 ${!darkModeTrigger ? "bg-black text-white" : ""}`}
+        className="pb-1.5 bg-gray-950/40 backdrop-blur-md border-b border-white/10 text-white shadow-none"
       >
         <NavbarContent className="flex">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
+            className="sm:hidden text-white"
           />
           <NavbarBrand className="mb-1.5">
             <Link href="/">
@@ -54,7 +48,7 @@ export default function App() {
                 width={130}
                 height={90}
                 className="mt-3"
-                alt="image"
+                alt="CPBYTE Logo"
               />
             </Link>
           </NavbarBrand>
@@ -66,40 +60,22 @@ export default function App() {
         >
           {menuItems.map((item) => (
             <NavbarItem key={item.id}>
-              <Link color="foreground" href={item.link}>
+              <Link
+                color="foreground"
+                href={item.link}
+                className="text-sm font-medium transition-colors duration-200 text-gray-300 hover:text-white"
+              >
                 {item.name}
               </Link>
             </NavbarItem>
           ))}
         </NavbarContent>
 
-        {/* <NavbarContent className="mt-3 mb-2" justify="end">
-          <NavbarItem>
-            <Button
-              as={Link}
-              href="/recruitment"
-              variant="flat"
-              className={`flex items-center gap-2 justify-center text-md font-semibold animate-pulse ${
-                darkModeTrigger
-                  ? "bg-green-200 text-green-600 hover:bg-green-200"
-                  : "bg-blue-700 text-white hover:bg-blue-900 hover:text-white"
-              }`}
-            >
-              Recruitment
-              <span className={`w-2 h-2  rounded-full animate-ping ${
-                darkModeTrigger
-                  ? "bg-green-700"
-                  : "bg-white "
-              }`}></span>
-            </Button>
-          </NavbarItem>
-        </NavbarContent> */}
-
-        <NavbarMenu>
+        <NavbarMenu className="bg-gray-950/95 backdrop-blur-xl border-t border-white/10">
           {menuItems.map((item) => (
             <NavbarMenuItem key={item.id}>
               <Link
-                className="w-full delay-75"
+                className="w-full delay-75 text-gray-300 hover:text-white"
                 href={item.link}
                 size="lg"
                 onClick={() => setIsMenuOpen(false)}

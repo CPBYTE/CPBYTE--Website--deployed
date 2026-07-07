@@ -137,14 +137,14 @@ const page = () => {
         Register to become Member of CPBYTE | Technical Club Of KIET
       </title>
 
-      <div className="max-w-screen-sm mx-auto my-5">
-        <h2 className="max-w-lg  mx-3 mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
+      <div className="max-w-screen-sm mx-auto my-10 px-4 text-white">
+        <h2 className="max-w-lg mx-3 mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl">
           <span className="relative inline-block">
             <span className="relative">
-              JOIN <span className="text-blue-700">CPBYTE</span>{" "}
+              JOIN <span className="gradient-text">CPBYTE</span>
             </span>
-          </span>{" "}
-          <p className="text-sm font-medium">
+          </span>
+          <p className="text-sm font-light text-gray-300 mt-2">
             This form is for first year students only.
           </p>
         </h2>

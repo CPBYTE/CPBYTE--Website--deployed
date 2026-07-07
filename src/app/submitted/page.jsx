@@ -25,7 +25,7 @@ const SuccessPage = () => {
       </div>
 
       {/* Card wrapper */}
-      <div className="relative z-10 w-full max-w-3xl bg-black/70 rounded-2xl shadow-2xl border border-gray-200 p-8 md:p-12 text-white text-center">
+      <div className="relative z-10 w-full max-w-3xl glass-card rounded-2xl shadow-2xl border border-white/10 p-8 md:p-12 text-white text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white drop-shadow-lg">
           🎉 Registration Successful!
         </h2>
