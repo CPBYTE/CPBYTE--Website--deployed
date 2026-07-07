@@ -19,8 +19,13 @@ export default function Page({ params }) {
       default:
         break;
     }
-    const result = await PlayListItems(playListID);
-    setVideos(result);
+    try {
+      const result = await PlayListItems(playListID);
+      setVideos(result || []);
+    } catch (err) {
+      console.error("Error loading AIML playlist:", err);
+      setVideos([]);
+    }
   };
   useEffect(() => {
     setData();
@@ -28,11 +33,10 @@ export default function Page({ params }) {
 
   return (
     <div className="flex mx-auto w-full mt-5 flex-col">
-      <title>AI/ML Resources CPBYTE | Technical Club Of KIET</title>
+      <title>AIML Resources CPBYTE | Technical Club Of KIET</title>
       <Tabs
         aria-label="Options"
         className="mx-auto"
-        selectedKey={React.key}
         size="lg"
         variant="light"
       >

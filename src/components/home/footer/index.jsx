@@ -8,8 +8,8 @@ const Footer = () => {
     <footer className="bg-gray-950/80 backdrop-blur-md text-white border-t border-white/5 transition-colors duration-300">
       <div className="container p-6 mx-auto">
         <div className="lg:flex">
-          <div className="w-full -mx-6 lg:w-2/5">
-            <div className="px-6">
+          <div className="w-full lg:w-2/5">
+            <div>
               <Link href="/">
                 <h1 className="text-xl font-bold text-white" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                   CPBYTE

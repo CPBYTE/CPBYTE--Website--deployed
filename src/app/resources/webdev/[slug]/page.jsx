@@ -23,11 +23,17 @@ export default function Page({ params }) {
         break;
       case "react":
         playListID = "PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige";
+        break;
       default:
         break;
     }
-    const result = await PlayListItems(playListID);
-    setVideos(result);
+    try {
+      const result = await PlayListItems(playListID);
+      setVideos(result || []);
+    } catch (err) {
+      console.error("Error loading webdev playlist:", err);
+      setVideos([]);
+    }
   };
   useEffect(() => {
     setData();
@@ -39,7 +45,6 @@ export default function Page({ params }) {
       <Tabs
         aria-label="Options"
         className="mx-auto"
-        selectedKey={React.key}
         size="lg"
         variant="light"
       >

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Heading1 = ({ title }) => {
   return (
-    <div className="max-w-xl mb-10 mt-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    <div className="max-w-xl mb-10 mt-10 mx-auto sm:text-center lg:max-w-2xl md:mb-12">
       <h1 className="text-2xl font-bold text-center text-white capitalize lg:text-4xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
         {title}
         <div className="flex justify-center mx-auto mt-6">

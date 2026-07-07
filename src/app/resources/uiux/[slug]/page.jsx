@@ -19,8 +19,13 @@ export default function Page({ params }) {
       default:
         break;
     }
-    const result = await PlayListItems(playListID);
-    setVideos(result);
+    try {
+      const result = await PlayListItems(playListID);
+      setVideos(result || []);
+    } catch (err) {
+      console.error("Error loading UI/UX playlist:", err);
+      setVideos([]);
+    }
   };
   useEffect(() => {
     setData();
@@ -32,7 +37,6 @@ export default function Page({ params }) {
       <Tabs
         aria-label="Options"
         className="mx-auto"
-        selectedKey={React.key}
         size="lg"
         variant="light"
       >
