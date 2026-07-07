@@ -24,6 +24,7 @@ export default function App() {
     { id: 3, link: "/projects", name: "Projects" },
     { id: 4, link: "/events", name: "Events" },
     { id: 5, link: "/resources", name: "Resources" },
+    { id: 9, link: "https://cpbytestudentportal.netlify.app/", name: "Student Portal", external: true },
     { id: 7, link: "/team", name: "Team" },
     { id: 8, link: "/contact", name: "Contact Us" },
   ];
@@ -64,6 +65,7 @@ export default function App() {
                 color="foreground"
                 href={item.link}
                 className="text-sm font-medium transition-colors duration-200 text-gray-300 hover:text-white"
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 {item.name}
               </Link>
@@ -79,6 +81,7 @@ export default function App() {
                 href={item.link}
                 size="lg"
                 onClick={() => setIsMenuOpen(false)}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 {item.name}
               </Link>

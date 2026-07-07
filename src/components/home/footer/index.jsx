@@ -29,6 +29,14 @@ const Footer = () => {
                 <Link href="/about" className="block mt-2 text-sm hover:underline text-gray-500 hover:text-gray-300">Message</Link>
                 <Link href="/team" className="block mt-2 text-sm hover:underline text-gray-500 hover:text-gray-300">Team</Link>
                 <Link href="/about" className="block mt-2 text-sm hover:underline text-gray-500 hover:text-gray-300">Functioning</Link>
+                <a
+                  href="https://cpbytestudentportal.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block mt-2 text-sm hover:underline text-gray-500 hover:text-gray-300"
+                >
+                  Student Portal
+                </a>
               </div>
 
               <div>

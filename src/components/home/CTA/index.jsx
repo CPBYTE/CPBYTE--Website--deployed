@@ -68,7 +68,7 @@ const CTA = () => {
         <div className="container grid grid-cols-2 gap-8 py-4 mx-auto text-center md:grid-cols-4">
             <div>
                 <Counter 
-                targetCount={100} 
+                targetCount={800} 
                 isVisible={isVisible} />
                 <p className="text-xs font-medium tracking-wider text-gray-400 uppercase mt-2">
                   Members
@@ -76,7 +76,7 @@ const CTA = () => {
             </div>
             <div>
                 <Counter 
-                targetCount={15} 
+                targetCount={50} 
                 isVisible={isVisible} />
                 <p className="text-xs font-medium tracking-wider text-gray-400 uppercase mt-2">
                   Ongoing Projects
@@ -84,7 +84,7 @@ const CTA = () => {
             </div>
             <div>
                 <Counter 
-                targetCount={30} 
+                targetCount={80} 
                 isVisible={isVisible} />
                 <p className="text-xs font-medium tracking-wider text-gray-400 uppercase mt-2">
                   Finished Projects
@@ -92,7 +92,7 @@ const CTA = () => {
             </div>
             <div>
                 <Counter 
-                targetCount={8} 
+                targetCount={12} 
                 isVisible={isVisible} />
                 <p className="text-xs font-medium tracking-wider text-gray-400 uppercase mt-2">
                   Collaborators
