@@ -43,7 +43,7 @@ export async function POST(request) {
 
     if (existingApplication) {
       return NextResponse.json(
-        { message: 'An application with this college email already exists.' },
+        { message: 'A form with this college email already submitted.' },
         { status: 409 }
       );
     }

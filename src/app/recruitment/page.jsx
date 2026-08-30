@@ -17,7 +17,7 @@ const validationSchema = Yup.object({
   phone: Yup.string()
     .required('Phone number is required')
     .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits'),
-  dsaLanguage: Yup.string().required('DSA Language preference is required'),
+  dsaLanguage: Yup.string().required('DSA Language is required'),
   firstDomain: Yup.string().required('First domain preference is required'),
   secondDomain: Yup.string()
     .required('Second domain preference is required')
