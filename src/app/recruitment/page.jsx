@@ -136,7 +136,7 @@ export default function RecruitmentForm() {
                       id="name" 
                       name="name" 
                       className={`w-full px-4 py-3 bg-white/5 border ${errors.name && touched.name ? 'border-red-500/50' : 'border-white/10'} rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-white placeholder-gray-500`}
-                      placeholder="John Doe"
+                      placeholder="Aarav Sharma"
                     />
                     <ErrorMessage name="name" component="div" className="text-red-400 text-xs mt-1 font-medium" />
                   </motion.div>
@@ -149,7 +149,7 @@ export default function RecruitmentForm() {
                       id="collegeEmail" 
                       name="collegeEmail" 
                       className={`w-full px-4 py-3 bg-white/5 border ${errors.collegeEmail && touched.collegeEmail ? 'border-red-500/50' : 'border-white/10'} rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-white placeholder-gray-500`}
-                      placeholder="john.doe@kiet.edu"
+                      placeholder="aarav.sharma@kiet.edu"
                     />
                     <ErrorMessage name="collegeEmail" component="div" className="text-red-400 text-xs mt-1 font-medium" />
                   </motion.div>
