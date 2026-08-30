@@ -19,7 +19,9 @@ const validationSchema = Yup.object({
     .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits'),
   dsaLanguage: Yup.string().required('DSA Language preference is required'),
   firstDomain: Yup.string().required('First domain preference is required'),
-  secondDomain: Yup.string().required('Second domain preference is required'),
+  secondDomain: Yup.string()
+    .required('Second domain preference is required')
+    .notOneOf([Yup.ref('firstDomain')], 'Second domain must be different from the first domain'),
   year: Yup.string().required('Year of study is required'),
   referredBy: Yup.string(),
 });
@@ -122,7 +124,7 @@ export default function RecruitmentForm() {
             validationSchema={validationSchema}
             onSubmit={onSubmit}
           >
-            {({ isSubmitting, errors, touched }) => (
+            {({ isSubmitting, errors, touched, values }) => (
               <Form className="space-y-6">
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -266,7 +268,7 @@ export default function RecruitmentForm() {
                       >
                         <option value="" disabled className="text-gray-500">Select Domain</option>
                         {domainOptions.map(option => (
-                          <option key={option} value={option}>{option}</option>
+                          <option key={option} value={option} disabled={option === values.firstDomain}>{option}</option>
                         ))}
                       </Field>
                       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400">
@@ -325,7 +327,7 @@ export default function RecruitmentForm() {
                         </>
                       ) : (
                         <>
-                          Submit Application
+                          Submit Form
                           <Send className="w-5 h-5" />
                         </>
                       )}

@@ -101,7 +101,7 @@ const CTA = () => {
         </div>
         <div className="flex p-4 mx-auto mt-6 w-52">
             <Link
-            href="/register"
+            href="/recruitment"
             className="py-3 px-6 bg-blue-600 hover:bg-blue-500 text-white w-full transition-all duration-300 text-center text-sm font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 rounded-lg tracking-wide">
                 Register Now
             </Link>

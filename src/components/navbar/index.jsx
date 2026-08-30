@@ -71,6 +71,11 @@ export default function App() {
               </Link>
             </NavbarItem>
           ))}
+          <NavbarItem>
+            <Button as={Link} href="/recruitment" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium px-5 py-2 rounded-lg hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all">
+              Register Now
+            </Button>
+          </NavbarItem>
         </NavbarContent>
 
         <NavbarMenu className="bg-gray-950/95 backdrop-blur-xl border-t border-white/10">
