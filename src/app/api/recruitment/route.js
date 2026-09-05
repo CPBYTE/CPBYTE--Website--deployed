@@ -30,17 +30,38 @@ function checkRateLimit(ip) {
 
 export async function POST(request) {
   try {
-    const ip = request.headers.get('x-forwarded-for') || request.ip || '127.0.0.1';
-    
-    if (!checkRateLimit(ip)) {
-      return NextResponse.json(
-        { message: 'Too many requests from this IP, please try again after 15 minutes.' },
-        { status: 429 }
-      );
+    try {
+      const ip = request.headers.get('x-forwarded-for') || request.ip || '127.0.0.1';
+      
+      if (!checkRateLimit(ip)) {
+        return NextResponse.json(
+          { message: 'Too many requests from this IP, please try again after 15 minutes.' },
+          { status: 429 }
+        );
+      }
+    } catch (rateLimitError) {
+      console.error('Rate limit error:', rateLimitError);
     }
 
-    const body = await request.json();
-    await connectToDatabase();
+    let body;
+    try {
+      body = await request.json();
+    } catch (jsonError) {
+      console.error('Invalid JSON body:', jsonError);
+      return NextResponse.json({ message: 'Invalid JSON body' }, { status: 400 });
+    }
+    
+    console.log("Attempting to connect to MongoDB...");
+    try {
+      await connectToDatabase();
+      console.log("Successfully connected to MongoDB.");
+    } catch (dbError) {
+      console.error("MongoDB Connection Error:", dbError);
+      return NextResponse.json(
+        { message: 'Database connection failed. Please try again later.' },
+        { status: 500 }
+      );
+    }
 
     const {
       name,
@@ -112,7 +133,7 @@ export async function POST(request) {
     }
 
     return NextResponse.json(
-      { message: 'Internal Server Error' },
+      { message: 'Internal Server Error: ' + error.message, errorType: error.name },
       { status: 500 }
     );
   }
